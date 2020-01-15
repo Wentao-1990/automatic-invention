@@ -10,7 +10,7 @@ my @ar;
 opendir DIR, $ARGV[0];
 my @dir=readdir DIR;
 foreach (@dir){
-        if($_=~/fasta/){
+        if($_=~/fasta$/){
                 $_=~s/\.fasta//;
                 push @spe,$_;
                 }
