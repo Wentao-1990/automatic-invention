@@ -9,7 +9,7 @@ my (%hs_g2k,%hs_k2m);
 open FL,$ARGV[0];
 while(<FL>){
         chomp;
-        if($_=~/(M\d+)/){
+        if($_=~/(M\d+)/ or $_=~/\s+(\d+)/){
                 $tag=$1;
                 $_=~s/^\s+//;
                 $hs_minf{$tag}=$_;
