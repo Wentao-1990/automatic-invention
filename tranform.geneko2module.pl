@@ -30,7 +30,7 @@ foreach(keys %hs_g2k){
                 }
         }
 
-######subroutie for transform hash values and keys#####
+######subroutine for transform hash values and keys#####
 
 sub hashrevtran{
         my (%hs_kraw)=@_;
